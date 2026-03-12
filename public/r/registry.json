@@ -1,0 +1,114 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@spatialreal",
+  "homepage": "https://github.com/spatialwalk/avatarkit-react",
+  "items": [
+    {
+      "name": "spatialreal-avatar",
+      "type": "registry:component",
+      "title": "SpatialReal Avatar",
+      "description": "Installs the SpatialReal avatar provider, shell primitives, and a barrel file for concise imports.",
+      "files": [
+        {
+          "path": "src/lib/components/spatialreal-avatar/index.ts",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/index.ts"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-provider.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-provider.tsx"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-context.ts",
+          "type": "registry:hook",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-context.ts"
+        },
+        {
+          "path": "src/lib/hooks/useSpatialRealAvatar.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/useSpatialRealAvatar.ts"
+        },
+        {
+          "path": "src/lib/types/spatialreal-avatar.ts",
+          "type": "registry:lib",
+          "target": "src/types/spatialreal-avatar.ts"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-canvas.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-canvas.tsx"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-error.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-error.tsx"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-frame.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-frame.tsx"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-loading.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-loading.tsx"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-status.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-status.tsx"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "src/utils.ts"
+        }
+      ],
+      "dependencies": [
+        "@livekit/components-react",
+        "@spatialwalk/avatarkit@1.0.0-beta.75",
+        "@spatialwalk/avatarkit-rtc@1.0.0-beta.7",
+        "class-variance-authority",
+        "clsx",
+        "livekit-client@2.16.1",
+        "lucide-react",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "spatialreal-avatar-provider",
+      "type": "registry:component",
+      "title": "SpatialReal Avatar Provider",
+      "description": "Provides SpatialReal avatar lifecycle state, LiveKit session context, and room audio through React context.",
+      "files": [
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-provider.tsx",
+          "type": "registry:component",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-provider.tsx"
+        },
+        {
+          "path": "src/lib/components/spatialreal-avatar/spatialreal-avatar-context.ts",
+          "type": "registry:hook",
+          "target": "src/components/spatialreal-avatar/spatialreal-avatar-context.ts"
+        },
+        {
+          "path": "src/lib/hooks/useSpatialRealAvatar.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/useSpatialRealAvatar.ts"
+        },
+        {
+          "path": "src/lib/types/spatialreal-avatar.ts",
+          "type": "registry:lib",
+          "target": "src/types/spatialreal-avatar.ts"
+        }
+      ],
+      "dependencies": [
+        "@livekit/components-react",
+        "@spatialwalk/avatarkit@1.0.0-beta.75",
+        "@spatialwalk/avatarkit-rtc@1.0.0-beta.7",
+        "livekit-client@2.16.1"
+      ]
+    }
+  ]
+}

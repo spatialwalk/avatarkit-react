@@ -1,0 +1,245 @@
+:root {
+  color-scheme: light;
+  --bg: #f3efe7;
+  --paper: rgba(255, 251, 245, 0.8);
+  --paper-strong: #fffaf2;
+  --line: rgba(20, 27, 39, 0.12);
+  --line-strong: rgba(20, 27, 39, 0.2);
+  --ink: #101827;
+  --muted: #566173;
+  --accent: #b44d24;
+  --accent-deep: #7f2d17;
+  --shadow: 0 30px 80px -40px rgba(16, 24, 39, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(180, 77, 36, 0.16), transparent 30%),
+    linear-gradient(180deg, #f5efe6 0%, #ece6dc 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+}
+
+a {
+  color: inherit;
+}
+
+code,
+pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 242, 0.98), rgba(255, 248, 240, 0.82)),
+    linear-gradient(120deg, rgba(180, 77, 36, 0.12), rgba(16, 24, 39, 0));
+  box-shadow: var(--shadow);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -80px -120px auto;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(180, 77, 36, 0.18), transparent 68%);
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 12px;
+  color: var(--accent-deep);
+  font-family: "Trebuchet MS", "Avenir Next Condensed", "Gill Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.card h2 {
+  margin: 0;
+  line-height: 0.96;
+}
+
+.hero h1 {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(2.6rem, 7vw, 5.4rem);
+}
+
+.lede,
+.card p,
+.card li,
+.card dd {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.lede {
+  max-width: 58ch;
+  margin: 20px 0 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: "Trebuchet MS", "Avenir Next", "Gill Sans", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.button-primary {
+  background: var(--ink);
+  color: #fff8ef;
+}
+
+.button-secondary {
+  border-color: var(--line-strong);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--paper);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+}
+
+.card-wide {
+  grid-column: 1 / -1;
+}
+
+.card-accent {
+  background:
+    linear-gradient(160deg, rgba(255, 248, 241, 0.98), rgba(246, 238, 228, 0.88)),
+    var(--paper);
+}
+
+.card p {
+  margin: 14px 0 0;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 18px 0 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(16, 24, 39, 0.08);
+  border-radius: 20px;
+  background: var(--paper-strong);
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.endpoint-list,
+.settings-list {
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.endpoint-list {
+  list-style: none;
+}
+
+.endpoint-list li + li {
+  margin-top: 12px;
+}
+
+.endpoint-list a {
+  color: var(--accent-deep);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.settings-list div {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.settings-list div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.settings-list dt {
+  font-family: "Trebuchet MS", "Avenir Next", "Gill Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.settings-list dd {
+  margin: 0;
+}
+
+@media (max-width: 840px) {
+  .page-shell {
+    width: min(100% - 20px, 1120px);
+    padding: 20px 0 44px;
+  }
+
+  .hero,
+  .card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-list div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
