@@ -62,7 +62,7 @@
         {
           "path": "src/lib/utils.ts",
           "type": "registry:lib",
-          "target": "src/utils.ts"
+          "target": "src/lib/utils.ts"
         }
       ],
       "dependencies": [
