@@ -1,58 +1,56 @@
-'use client'
-
 export {
   SpatialRealAvatarCanvas,
-} from './spatialreal-avatar-canvas'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-canvas'
 export type {
   SpatialRealAvatarCanvasProps,
-} from './spatialreal-avatar-canvas'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-canvas'
 
 export {
   SpatialRealAvatarError,
-} from './spatialreal-avatar-error'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-error'
 export type {
   SpatialRealAvatarErrorProps,
-} from './spatialreal-avatar-error'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-error'
 
 export {
   SpatialRealAvatarFrame,
-} from './spatialreal-avatar-frame'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-frame'
 export type {
   SpatialRealAvatarFrameProps,
-} from './spatialreal-avatar-frame'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-frame'
 
 export {
   SpatialRealAvatarLoading,
-} from './spatialreal-avatar-loading'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-loading'
 export type {
   SpatialRealAvatarLoadingProps,
-} from './spatialreal-avatar-loading'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-loading'
 
 export {
   SpatialRealAvatarProvider,
-} from './spatialreal-avatar-provider'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-provider'
 export type {
   SpatialRealAvatarProviderProps,
-} from './spatialreal-avatar-provider'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-provider'
 
 export {
   SpatialRealAvatarStatus,
-} from './spatialreal-avatar-status'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-status'
 export type {
   SpatialRealAvatarStatusProps,
-} from './spatialreal-avatar-status'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-status'
 
 export {
   useSpatialRealAvatarContext,
-} from './spatialreal-avatar-context'
+} from '@/components/spatialreal-avatar/spatialreal-avatar-context'
 
 export {
   useSpatialRealAvatar,
-} from '../../hooks/useSpatialRealAvatar'
+} from '@/hooks/useSpatialRealAvatar'
 
 export type {
   SpatialRealAvatarConnection,
   SpatialRealAvatarConnectionStatus,
   UseSpatialRealAvatarOptions,
   UseSpatialRealAvatarResult,
-} from '../../types/spatialreal-avatar'
+} from '@/types/spatialreal-avatar'

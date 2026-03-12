@@ -1,9 +1,19 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
   publicDir: false,
+  resolve: {
+    alias: [
+      { find: '@/components', replacement: fileURLToPath(new URL('./src/lib/components', import.meta.url)) },
+      { find: '@/hooks', replacement: fileURLToPath(new URL('./src/lib/hooks', import.meta.url)) },
+      { find: '@/types', replacement: fileURLToPath(new URL('./src/lib/types', import.meta.url)) },
+      { find: '@/lib', replacement: fileURLToPath(new URL('./src/lib', import.meta.url)) },
+      { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
+    ],
+  },
   build: {
     lib: {
       entry: 'src/lib/index.ts',

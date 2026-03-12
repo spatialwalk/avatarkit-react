@@ -3,7 +3,7 @@
 import { cva, type VariantProps } from 'class-variance-authority'
 import type { HTMLAttributes } from 'react'
 
-import { cn } from '../../utils'
+import { cn } from '@/lib/utils'
 
 const frameVariants = cva(
   'relative isolate overflow-hidden rounded-[28px] border border-border/70 bg-card/95 text-card-foreground shadow-[0_28px_90px_-40px_hsl(var(--foreground)/0.45)] backdrop-blur-sm',

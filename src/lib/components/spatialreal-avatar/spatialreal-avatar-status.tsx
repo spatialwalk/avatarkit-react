@@ -2,9 +2,9 @@
 
 import type { HTMLAttributes } from 'react'
 
-import { useSpatialRealAvatarContext } from './spatialreal-avatar-context'
-import type { SpatialRealAvatarConnectionStatus } from '../../types/spatialreal-avatar'
-import { cn } from '../../utils'
+import { useSpatialRealAvatarContext } from '@/components/spatialreal-avatar/spatialreal-avatar-context'
+import type { SpatialRealAvatarConnectionStatus } from '@/types/spatialreal-avatar'
+import { cn } from '@/lib/utils'
 
 const statusLabels: Record<SpatialRealAvatarConnectionStatus, string> = {
   idle: 'Idle',

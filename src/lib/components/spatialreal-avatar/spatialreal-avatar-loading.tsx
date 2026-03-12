@@ -2,8 +2,8 @@
 
 import type { HTMLAttributes, ReactNode } from 'react'
 
-import { useSpatialRealAvatarContext } from './spatialreal-avatar-context'
-import { cn } from '../../utils'
+import { useSpatialRealAvatarContext } from '@/components/spatialreal-avatar/spatialreal-avatar-context'
+import { cn } from '@/lib/utils'
 
 export interface SpatialRealAvatarLoadingProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode

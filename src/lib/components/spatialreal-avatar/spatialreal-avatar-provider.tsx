@@ -4,12 +4,12 @@ import { useCallback, useMemo, type ReactNode } from 'react'
 
 import { RoomAudioRenderer, SessionProvider } from '@livekit/components-react'
 
-import { useSpatialRealAvatar } from '../../hooks/useSpatialRealAvatar'
+import { useSpatialRealAvatar } from '@/hooks/useSpatialRealAvatar'
 import type {
   UseSpatialRealAvatarOptions,
   UseSpatialRealAvatarSessionOptions,
-} from '../../types/spatialreal-avatar'
-import { SpatialRealAvatarContext } from './spatialreal-avatar-context'
+} from '@/types/spatialreal-avatar'
+import { SpatialRealAvatarContext } from '@/components/spatialreal-avatar/spatialreal-avatar-context'
 
 export interface SpatialRealAvatarProviderProps
   extends UseSpatialRealAvatarOptions,

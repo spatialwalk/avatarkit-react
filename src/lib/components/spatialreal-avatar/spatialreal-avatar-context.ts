@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react'
 
-import type { UseSpatialRealAvatarResult } from '../../types/spatialreal-avatar'
+import type { UseSpatialRealAvatarResult } from '@/types/spatialreal-avatar'
 
 export const SpatialRealAvatarContext = createContext<UseSpatialRealAvatarResult | null>(null)
 

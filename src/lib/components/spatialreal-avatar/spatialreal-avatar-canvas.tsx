@@ -2,8 +2,8 @@
 
 import type { CSSProperties, HTMLAttributes, MutableRefObject, Ref } from 'react'
 
-import { useSpatialRealAvatarContext } from './spatialreal-avatar-context'
-import { cn } from '../../utils'
+import { useSpatialRealAvatarContext } from '@/components/spatialreal-avatar/spatialreal-avatar-context'
+import { cn } from '@/lib/utils'
 
 function assignRef<T>(ref: Ref<T | null> | undefined, value: T | null) {
   if (typeof ref === 'function') {

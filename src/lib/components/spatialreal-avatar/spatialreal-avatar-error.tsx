@@ -3,8 +3,8 @@
 import type { HTMLAttributes, ReactNode } from 'react'
 import { AlertTriangle } from 'lucide-react'
 
-import { useSpatialRealAvatarContext } from './spatialreal-avatar-context'
-import { cn } from '../../utils'
+import { useSpatialRealAvatarContext } from '@/components/spatialreal-avatar/spatialreal-avatar-context'
+import { cn } from '@/lib/utils'
 
 export interface SpatialRealAvatarErrorProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode
